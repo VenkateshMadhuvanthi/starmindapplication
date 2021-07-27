@@ -15,5 +15,5 @@ sample = pd.read_csv('https://data.stadt-zuerich.ch/dataset/sid_stapo_hundenamen
 new_sample= sample[sample.HUNDENAME!= 'unbekannt']
 #printing the names 
 for name in new_sample.HUNDENAME:
-     if levenshtein("luca",name) == 1:
+     if levenshtein("Luca",name) == 1:
         print(name)
